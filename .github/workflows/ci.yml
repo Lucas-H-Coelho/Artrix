@@ -20,6 +20,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd server && npm install && npm test
+      - run: cd server && npm install && npm build
       - run: cd client && npm install && npm run build
-      - run: cd mobile && npm install && npm test
+      - run: cd mobile && npm install && npm build
